@@ -13,7 +13,8 @@ specified?
 
 ## rawgithub
 
-[test page](https://rawgithub.com/dfkaye/csp-test/master/csp-test.html target='_blank')
+<a href='//rawgithub.com/dfkaye/csp-test/master/csp-test.html' 
+    target='_new' title='opens in new tab or window'>test page</a>__
 
 ## license
 
