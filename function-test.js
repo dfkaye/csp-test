@@ -7,7 +7,14 @@ console.log(parts);
 
 parts[1] = 'script-src \'unsafe-eval\' ' + parts[1];
 var updated = parts.join('');
-console.log(updated)
+
+console.log(updated);
+
 meta.setAttribute('content', updated);
 
-Function('console.log("function-test.js");')();
+typeof requestAnimationFrame == 'undefined' || (requestAnimationFrame(function(ts) {
+  console.log('requestAnimationFrame: ' + ts);
+  Function('console.log("function-test.js");')();
+}));
+
+//Function('console.log("function-test.js");')();

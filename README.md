@@ -9,12 +9,12 @@ content security policy bullpen
 ## answering the question
 
 can we use `Function()` in js from `script-src` when `unsafe-eval` is not 
-specified?
+specified? (nope)
 
 ## rawgithub
 
 <a href='//rawgithub.com/dfkaye/csp-test/master/csp-test.html' 
-    target='_new' title='opens in new tab or window'>test page</a>__
+    target='_new' title='opens in new tab or window'>test page</a>
 
 ## license
 
