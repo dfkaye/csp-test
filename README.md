@@ -15,7 +15,6 @@ specified?
 
 [test page](https://rawgithub.com/dfkaye/csp-test/master/csp-test.html target='_blank')
 
-
 ## license
 
 JSON (modified MIT)
