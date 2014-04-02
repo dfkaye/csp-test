@@ -14,7 +14,13 @@ meta.setAttribute('content', updated);
 
 typeof requestAnimationFrame == 'undefined' || (requestAnimationFrame(function(ts) {
   console.log('requestAnimationFrame: ' + ts);
-  Function('console.log("function-test.js");')();
+  var message;
+  try {
+    message = Function('msg', 'return msg;')('OK');
+  } catch (e) {
+    message = e.message
+    //Content Security Policy directive
+    //'unsafe-eval'
+  }
+  console.log(/unsafe-eval/.test(message));
 }));
-
-//Function('console.log("function-test.js");')();
